@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cognots — Spanish cognates, decoded</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=General+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="noise"></div>
+
+  <div class="page">
+    <header class="site-header">
+      <div class="logo-row">
+        <div class="logo-mark">
+          <span class="spark"></span>
+          <span class="wordmark">cognots</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button class="ghost" id="randomBtn" aria-label="Shuffle">Shuffle</button>
+        <button class="ghost" id="copyBtn" aria-label="Copy card">Copy card</button>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="card" id="card">
+        <div class="eyebrow" id="category">false friend</div>
+        <div class="word-row">
+          <div class="word-col">
+            <p class="label">en español</p>
+            <h1 class="spanish" id="spanishWord">éxito</h1>
+          </div>
+          <div class="word-col">
+            <p class="label">looks like</p>
+            <p class="looks-like" id="looksLike">exit</p>
+          </div>
+        </div>
+        <div class="meaning">
+          <p class="label">actually means</p>
+          <p class="meaning-text" id="meaningText">success; a win, not a doorway</p>
+        </div>
+        <p class="note" id="noteText">Don't tell your boss you want un exit rápido — you're announcing a win, not quitting.</p>
+        <div class="meta-row">
+          <div class="chips" id="chipRow"></div>
+          <div class="progress" id="progress">1 / 1</div>
+        </div>
+      </section>
+
+      <div class="controls">
+        <button id="prevBtn" class="ghost">Back</button>
+        <button id="nextBtn" class="ghost">Next</button>
+        <button id="surpriseBtn" class="primary">Surprise me</button>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Tap space, arrow keys, or the buttons to keep stumbling. Spanish learners avoid awkward false friends.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
