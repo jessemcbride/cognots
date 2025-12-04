@@ -2456,137 +2456,308 @@ const legacyEntries = [
 // ];
 
 const entries = [
-    {
-      "spanish": "Colorado",
-      "cognate": "Colored",
-      "meaning": "Red, reddish",
-      "correct": "De color",
+  {
+    "spanish": "Arena",
+    "cognate": "Arena",
+    "meaning": "Sand",
+    "correct": "Estadio",
 
-      "correct_example": "Tenía la cara colorada después de correr.",
-      "correct_translation": "His face was red after running.",
+    "correct_example": "La arena de la playa estaba muy caliente.",
+    "correct_translation": "The sand on the beach was very hot.",
 
-      "false_friend_example": "El dibujo estaba colorado con distintos tonos.",
-      "false_friend_translation_wrong": "The drawing was red with different tones.",
-      "false_friend_translation_right": "The drawing was colored with different shades."
-    },
-    {
-      "spanish": "Blanco",
-      "cognate": "Blank",
-      "meaning": "White",
-      "correct": "Espacio en blanco, vacío",
+    "false_friend_example": "El concierto fue en una arena enorme.",
+    "false_friend_translation_wrong": "The concert was in a huge sand.",
+    "false_friend_translation_right": "The concert was in a huge arena."
+  },
+  {
+    "spanish": "Carpeta",
+    "cognate": "Carpet",
+    "meaning": "Folder",
+    "correct": "Alfombra",
 
-      "correct_example": "El caballo es completamente blanco.",
-      "correct_translation": "The horse is completely white.",
+    "correct_example": "Guarda los documentos en la carpeta verde.",
+    "correct_translation": "Put the documents in the green folder.",
 
-      "false_friend_example": "Deja un blanco para escribir tu nombre.",
-      "false_friend_translation_wrong": "Leave a white to write your name.",
-      "false_friend_translation_right": "Leave a blank space to write your name."
-    },
-    {
-      "spanish": "Aviso",
-      "cognate": "Advice",
-      "meaning": "Warning",
-      "correct": "Consejo",
+    "false_friend_example": "Compraron una carpeta nueva para la sala.",
+    "false_friend_translation_wrong": "They bought a new folder for the living room.",
+    "false_friend_translation_right": "They bought a new carpet for the living room."
+  },
+  {
+    "spanish": "Decepción",
+    "cognate": "Deception",
+    "meaning": "Disappointment",
+    "correct": "Engaño, mentira",
 
-      "correct_example": "El aviso en la puerta decía que estaba cerrado.",
-      "correct_translation": "The warning on the door said it was closed.",
+    "correct_example": "Su renuncia fue una decepción para todos.",
+    "correct_translation": "His resignation was a disappointment for everyone.",
 
-      "false_friend_example": "Necesito un aviso sobre qué hacer.",
-      "false_friend_translation_wrong": "I need a warning about what to do.",
-      "false_friend_translation_right": "I need advice about what to do."
-    },
-    {
-      "spanish": "Lectura",
-      "cognate": "Lecture",
-      "meaning": "Reading",
-      "correct": "Conferencia, sermón",
+    "false_friend_example": "Descubrieron la decepción del estafador.",
+    "false_friend_translation_wrong": "They discovered the scammer's disappointment.",
+    "false_friend_translation_right": "They discovered the scammer's deception."
+  },
+  {
+    "spanish": "Colorado",
+    "cognate": "Colored",
+    "meaning": "Red, reddish",
+    "correct": "De color",
 
-      "correct_example": "La lectura diaria mejora el vocabulario.",
-      "correct_translation": "Daily reading improves vocabulary.",
+    "correct_example": "Ella regresó colorada después de hacer ejercicio.",
+    "correct_translation": "She came back red after exercising.",
 
-      "false_friend_example": "Asistí a una lectura sobre filosofía antigua.",
-      "false_friend_translation_wrong": "I attended a reading about ancient philosophy.",
-      "false_friend_translation_right": "I attended a lecture on ancient philosophy."
-    },
-    {
-      "spanish": "Ganga",
-      "cognate": "Gang",
-      "meaning": "Bargain",
-      "correct": "Pandilla",
+    "false_friend_example": "El dibujo está colorado en tonos verdes.",
+    "false_friend_translation_wrong": "The drawing is red in green tones.",
+    "false_friend_translation_right": "The drawing is colored in green tones."
+  },
+  {
+    "spanish": "Aviso",
+    "cognate": "Advice",
+    "meaning": "Warning",
+    "correct": "Consejo",
 
-      "correct_example": "Esa computadora fue una ganga, costó muy poco.",
-      "correct_translation": "That computer was a bargain, it cost very little.",
+    "correct_example": "El aviso decía que el puente estaba cerrado.",
+    "correct_translation": "The warning said the bridge was closed.",
 
-      "false_friend_example": "Había una ganga reunida en la esquina.",
-      "false_friend_translation_wrong": "There was a bargain gathered on the corner.",
-      "false_friend_translation_right": "There was a gang gathered on the corner."
-    },
-    {
-      "spanish": "Recordar",
-      "cognate": "To record",
-      "meaning": "To remember, to remind",
-      "correct": "Grabar",
+    "false_friend_example": "Necesito un aviso sobre qué hacer.",
+    "false_friend_translation_wrong": "I need a warning about what to do.",
+    "false_friend_translation_right": "I need advice about what to do."
+  },
+  {
+    "spanish": "Recordar",
+    "cognate": "To record",
+    "meaning": "To remember, to remind",
+    "correct": "Grabar",
 
-      "correct_example": "Necesito recordar llamar a mi madre.",
-      "correct_translation": "I need to remember to call my mother.",
+    "correct_example": "Necesito recordar llamar a mi madre.",
+    "correct_translation": "I need to remember to call my mother.",
 
-      "false_friend_example": "Voy a recordar este mensaje para escucharlo después.",
-      "false_friend_translation_wrong": "I'm going to remember this message to listen to it later.",
-      "false_friend_translation_right": "I'm going to record this message to listen to it later."
-    },
-    {
-      "spanish": "Arena",
-      "cognate": "Arena",
-      "meaning": "Sand",
-      "correct": "Estadio",
+    "false_friend_example": "Voy a recordar este mensaje para escucharlo después.",
+    "false_friend_translation_wrong": "I'm going to remember this message to listen to it later.",
+    "false_friend_translation_right": "I'm going to record this message to listen to it later."
+  },
+  {
+    "spanish": "Ganga",
+    "cognate": "Gang",
+    "meaning": "Bargain",
+    "correct": "Pandilla",
 
-      "correct_example": "Había arena dentro de mis zapatos después de la playa.",
-      "correct_translation": "There was sand in my shoes after the beach.",
+    "correct_example": "Esa computadora fue una ganga; costó muy poco.",
+    "correct_translation": "That computer was a bargain; it cost very little.",
 
-      "false_friend_example": "El equipo juega en una arena moderna.",
-      "false_friend_translation_wrong": "The team plays in a modern sand.",
-      "false_friend_translation_right": "The team plays in a modern arena."
-    },
-    {
-      "spanish": "Tarjeta",
-      "cognate": "Target",
-      "meaning": "Card",
-      "correct": "Objetivo",
+    "false_friend_example": "Había una ganga reunida en la esquina.",
+    "false_friend_translation_wrong": "There was a bargain gathered on the corner.",
+    "false_friend_translation_right": "There was a gang gathered on the corner."
+  },
+  {
+    "spanish": "Lectura",
+    "cognate": "Lecture",
+    "meaning": "Reading",
+    "correct": "Conferencia, sermón",
 
-      "correct_example": "Necesitas una tarjeta para acceder al edificio.",
-      "correct_translation": "You need a card to access the building.",
+    "correct_example": "La lectura diaria mejora el vocabulario.",
+    "correct_translation": "Daily reading improves vocabulary.",
 
-      "false_friend_example": "El arquero apuntó a la tarjeta del tablero.",
-      "false_friend_translation_wrong": "The archer aimed at the card on the board.",
-      "false_friend_translation_right": "The archer aimed at the target on the board."
-    },
-    {
-      "spanish": "Casualidad",
-      "cognate": "Casualty",
-      "meaning": "Chance, coincidence",
-      "correct": "Baja, víctima",
+    "false_friend_example": "Asistí a una lectura sobre física cuántica.",
+    "false_friend_translation_wrong": "I attended a reading on quantum physics.",
+    "false_friend_translation_right": "I attended a lecture on quantum physics."
+  },
+  {
+    "spanish": "Tarjeta",
+    "cognate": "Target",
+    "meaning": "Card",
+    "correct": "Objetivo",
 
-      "correct_example": "Fue pura casualidad que nos encontráramos allí.",
-      "correct_translation": "It was pure coincidence that we ran into each other there.",
+    "correct_example": "Necesitas una tarjeta para acceder al edificio.",
+    "correct_translation": "You need a card to access the building.",
 
-      "false_friend_example": "Hubo una casualidad durante el accidente.",
-      "false_friend_translation_wrong": "There was a coincidence during the accident.",
-      "false_friend_translation_right": "There was a casualty during the accident."
-    },
-    {
-      "spanish": "Sensible",
-      "cognate": "Sensible",
-      "meaning": "Sensitive",
-      "correct": "Sensato",
+    "false_friend_example": "El arquero apuntó a la tarjeta del tablero.",
+    "false_friend_translation_wrong": "The archer aimed at the card on the board.",
+    "false_friend_translation_right": "The archer aimed at the target on the board."
+  },
+  {
+    "spanish": "Casualidad",
+    "cognate": "Casualty",
+    "meaning": "Chance, coincidence",
+    "correct": "Baja, víctima",
 
-      "correct_example": "Ella es muy sensible a los ruidos fuertes.",
-      "correct_translation": "She is very sensitive to loud noises.",
+    "correct_example": "Fue pura casualidad que nos encontráramos allí.",
+    "correct_translation": "It was pure coincidence that we ran into each other there.",
 
-      "false_friend_example": "Tomó una decisión sensible.",
-      "false_friend_translation_wrong": "She made a sensitive decision.",
-      "false_friend_translation_right": "She made a sensible decision."
-    }
-  ];
+    "false_friend_example": "Hubo una casualidad en el accidente.",
+    "false_friend_translation_wrong": "There was a coincidence in the accident.",
+    "false_friend_translation_right": "There was a casualty in the accident."
+  },
+  {
+    "spanish": "Sensible",
+    "cognate": "Sensible",
+    "meaning": "Sensitive",
+    "correct": "Sensato",
+
+    "correct_example": "Ella es muy sensible a los ruidos fuertes.",
+    "correct_translation": "She is very sensitive to loud noises.",
+
+    "false_friend_example": "Tomó una decisión sensible.",
+    "false_friend_translation_wrong": "She made a sensitive decision.",
+    "false_friend_translation_right": "She made a sensible decision."
+  },
+  {
+    "spanish": "Blanco",
+    "cognate": "Blank",
+    "meaning": "White",
+    "correct": "Espacio en blanco, vacío",
+
+    "correct_example": "El perro es completamente blanco.",
+    "correct_translation": "The dog is completely white.",
+
+    "false_friend_example": "Deja un blanco para completar la frase.",
+    "false_friend_translation_wrong": "Leave a white to complete the sentence.",
+    "false_friend_translation_right": "Leave a blank to complete the sentence."
+  },
+  {
+    "spanish": "Pan",
+    "cognate": "Pan",
+    "meaning": "Bread",
+    "correct": "Sartén",
+
+    "correct_example": "Compré pan fresco esta mañana.",
+    "correct_translation": "I bought fresh bread this morning.",
+
+    "false_friend_example": "Calenté el huevo en un pan pequeño.",
+    "false_friend_translation_wrong": "I heated the egg in a small bread.",
+    "false_friend_translation_right": "I heated the egg in a small pan."
+  },
+  {
+    "spanish": "Plaza",
+    "cognate": "Place",
+    "meaning": "Town square",
+    "correct": "Lugar",
+
+    "correct_example": "Tomamos un café en la plaza del pueblo.",
+    "correct_translation": "We had a coffee in the town square.",
+
+    "false_friend_example": "Este es un buen plaza para esconder el tesoro.",
+    "false_friend_translation_wrong": "This is a good town square to hide the treasure.",
+    "false_friend_translation_right": "This is a good place to hide the treasure."
+  },
+  {
+    "spanish": "Red",
+    "cognate": "Red",
+    "meaning": "Network, net",
+    "correct": "Rojo",
+
+    "correct_example": "La red de internet está caída.",
+    "correct_translation": "The internet network is down.",
+
+    "false_friend_example": "El auto es red brillante.",
+    "false_friend_translation_wrong": "The car is network shiny.",
+    "false_friend_translation_right": "The car is bright red."
+  },
+  {
+    "spanish": "Carta",
+    "cognate": "Cart",
+    "meaning": "Letter",
+    "correct": "Carrito",
+
+    "correct_example": "Recibí una carta de mi amigo en México.",
+    "correct_translation": "I received a letter from my friend in Mexico.",
+
+    "false_friend_example": "Empuja la carta del supermercado.",
+    "false_friend_translation_wrong": "Push the letter from the supermarket.",
+    "false_friend_translation_right": "Push the cart from the supermarket."
+  },
+  {
+    "spanish": "Fábrica",
+    "cognate": "Fabric",
+    "meaning": "Factory",
+    "correct": "Tela",
+
+    "correct_example": "La fábrica produce automóviles.",
+    "correct_translation": "The factory produces cars.",
+
+    "false_friend_example": "Esta fábrica es suave y resistente.",
+    "false_friend_translation_wrong": "This factory is soft and durable.",
+    "false_friend_translation_right": "This fabric is soft and durable."
+  },
+  {
+    "spanish": "Oficio",
+    "cognate": "Office",
+    "meaning": "Trade, craft, function",
+    "correct": "Oficina",
+
+    "correct_example": "Mi abuelo aprendió el oficio de carpintero.",
+    "correct_translation": "My grandfather learned the carpentry trade.",
+
+    "false_friend_example": "Estoy en mi oficio trabajando en mis correos.",
+    "false_friend_translation_wrong": "I'm in my trade working on my emails.",
+    "false_friend_translation_right": "I'm in my office working on my emails."
+  },
+  {
+    "spanish": "Dato",
+    "cognate": "Date",
+    "meaning": "Data",
+    "correct": "Fecha",
+
+    "correct_example": "Este dato es crucial para el informe.",
+    "correct_translation": "This data point is crucial for the report.",
+
+    "false_friend_example": "Necesito el dato de nuestra reunión.",
+    "false_friend_translation_wrong": "I need the data point for our meeting.",
+    "false_friend_translation_right": "I need the date of our meeting."
+  },
+  {
+    "spanish": "Mayor",
+    "cognate": "Mayor",
+    "meaning": "Older, bigger",
+    "correct": "Alcalde",
+
+    "correct_example": "Mi hermano mayor vive en España.",
+    "correct_translation": "My older brother lives in Spain.",
+
+    "false_friend_example": "El mayor dio un discurso en la plaza.",
+    "false_friend_translation_wrong": "The older person gave a speech in the square.",
+    "false_friend_translation_right": "The mayor gave a speech in the square."
+  },
+  {
+    "spanish": "Lectura",
+    "cognate": "Lecture",
+    "meaning": "Reading",
+    "correct": "Conferencia, sermón",
+
+    "correct_example": "La lectura mejora la concentración.",
+    "correct_translation": "Reading improves concentration.",
+
+    "false_friend_example": "Fui a una lectura sobre biología.",
+    "false_friend_translation_wrong": "I went to a reading on biology.",
+    "false_friend_translation_right": "I went to a lecture on biology."
+  },
+  {
+    "spanish": "Jugo",
+    "cognate": "Jug",
+    "meaning": "Juice",
+    "correct": "Jarra",
+
+    "correct_example": "Me gusta beber jugo de naranja por la mañana.",
+    "correct_translation": "I like to drink orange juice in the morning.",
+
+    "false_friend_example": "Sirve agua en el jugo.",
+    "false_friend_translation_wrong": "Serve water in the juice.",
+    "false_friend_translation_right": "Serve water in the jug."
+  },
+  {
+    "spanish": "Carga",
+    "cognate": "Cargo",
+    "meaning": "Load, burden",
+    "correct": "Puesto, posición",
+
+    "correct_example": "La carga del camión era muy pesada.",
+    "correct_translation": "The truck's load was very heavy.",
+
+    "false_friend_example": "Consiguió una carga importante en la empresa.",
+    "false_friend_translation_wrong": "He got an important burden in the company.",
+    "false_friend_translation_right": "He got an important position in the company."
+  }
+]
+
+
 
 const palettes = [
   { bg: "#fdf6ec", panel: "#ffffff", border: "#e3e8f0", accent: "#ff7a5a", accent2: "#111827" },
@@ -2601,19 +2772,20 @@ const els = {
   looksLike: document.getElementById("looksLike"),
   looksLikeCorrect: document.getElementById("looksLikeCorrect"),
   meaning: document.getElementById("meaningText"),
-  note: document.getElementById("noteText"),
-  category: document.getElementById("category"),
   chipRow: document.getElementById("chipRow"),
-  progress: document.getElementById("progress"),
+  // progress: document.getElementById("progress"),
   card: document.getElementById("card"),
-  examplesSection: document.getElementById("examplesSection"),
-  examplesToggle: document.getElementById("examplesToggle"),
-  examplesPanel: document.getElementById("examplesPanel"),
   correctExample: document.getElementById("correctExample"),
   correctTranslation: document.getElementById("correctTranslation"),
   falseFriendExample: document.getElementById("falseFriendExample"),
   falseFriendTranslationWrong: document.getElementById("falseFriendTranslationWrong"),
   falseFriendTranslationRight: document.getElementById("falseFriendTranslationRight"),
+  trapBlurb: document.getElementById("trapBlurb"),
+  usageWord: document.getElementById("usageWord"),
+  usageMeaning: document.getElementById("usageMeaning"),
+  usageContrast: document.getElementById("usageContrast"),
+  summaryPrimary: document.getElementById("summaryPrimary"),
+  summaryCognate: document.getElementById("summaryCognate"),
   next: document.getElementById("nextBtn"),
   prev: document.getElementById("prevBtn"),
   surprise: document.getElementById("surpriseBtn"),
@@ -2664,27 +2836,36 @@ function resetExamples(entry) {
     falseFriendTranslationWrong
   );
 
-  els.correctExample.textContent = correctExample || "—";
-  els.correctTranslation.textContent = correctTranslation || "—";
+  if (els.correctExample) els.correctExample.textContent = correctExample || "—";
+  if (els.correctTranslation) els.correctTranslation.textContent = correctTranslation || "—";
 
-  els.falseFriendExample.textContent = falseFriendExample || "—";
-  els.falseFriendTranslationWrong.textContent = falseFriendTranslationWrong || "—";
-  els.falseFriendTranslationRight.textContent = falseFriendTranslationRight || "—";
-
-  els.examplesToggle.disabled = !hasExamples;
-  els.examplesToggle.textContent = hasExamples ? "Show examples" : "No examples";
-  els.examplesToggle.setAttribute("aria-expanded", "false");
-  els.examplesPanel.hidden = true;
-  els.examplesSection.classList.remove("open");
+  if (els.falseFriendExample) els.falseFriendExample.textContent = falseFriendExample || "—";
+  if (els.falseFriendTranslationWrong) els.falseFriendTranslationWrong.textContent = falseFriendTranslationWrong || "—";
+  if (els.falseFriendTranslationRight) els.falseFriendTranslationRight.textContent = falseFriendTranslationRight || "—";
 }
 
-function toggleExamples(forceOpen) {
-  if (els.examplesToggle.disabled) return;
-  const shouldOpen = typeof forceOpen === "boolean" ? forceOpen : els.examplesPanel.hidden;
-  els.examplesPanel.hidden = !shouldOpen;
-  els.examplesToggle.setAttribute("aria-expanded", String(shouldOpen));
-  els.examplesToggle.textContent = shouldOpen ? "Hide examples" : "Show examples";
-  els.examplesSection.classList.toggle("open", shouldOpen);
+function fillUsage(entry) {
+  if (els.trapBlurb) {
+    const misread = entry.cognate || "—";
+    const correctWord = entry.correct || misread;
+    els.trapBlurb.textContent = `Learners often misread “${entry.spanish}” as “${misread},” but “${misread}” is ${correctWord}.`;
+  }
+
+  if (els.usageWord) els.usageWord.textContent = entry.spanish || "—";
+  if (els.usageMeaning) els.usageMeaning.textContent = `• Primary meaning: ${entry.meaning || "—"}.`;
+
+  if (els.usageContrast) {
+    const correctWord = entry.correct || "—";
+    const cognate = entry.cognate || "—";
+    els.usageContrast.textContent = `• Use ${correctWord} when you mean ${cognate}.`;
+  }
+
+  if (els.summaryPrimary) els.summaryPrimary.textContent = `${entry.spanish || "—"} → ${entry.meaning || "—"}`;
+  if (els.summaryCognate) {
+    const correctWord = entry.correct || "—";
+    const cognate = entry.cognate || "—";
+    els.summaryCognate.textContent = `${correctWord} → ${cognate}`;
+  }
 }
 
 function renderCard(index) {
@@ -2697,20 +2878,13 @@ function renderCard(index) {
   els.looksLike.textContent = entry.cognate;
   els.looksLikeCorrect.textContent = entry.correct;
   els.meaning.textContent = entry.meaning;
-  els.note.innerHTML = formatNote(entry);
-  if (els.category) {
-    els.category.textContent = entry.type || "";
-  }
-  els.progress.textContent = `${index + 1} / ${entries.length}`;
+
+  // els.progress.textContent = `${index + 1} / ${entries.length}`;
   resetExamples(entry);
+  fillUsage(entry);
 
   els.chipRow.innerHTML = "";
-  entry.tags.forEach((tag) => {
-    const chip = document.createElement("span");
-    chip.className = "chip";
-    chip.textContent = tag;
-    els.chipRow.appendChild(chip);
-  });
+  
 
   els.card.classList.remove("bump");
   void els.card.offsetWidth;
@@ -2742,9 +2916,8 @@ Note: ${entry.note}`;
 els.next.addEventListener("click", () => next(1));
 els.prev.addEventListener("click", () => next(-1));
 els.surprise.addEventListener("click", surprise);
-els.random.addEventListener("click", surprise);
-els.copy.addEventListener("click", copyCard);
-els.examplesToggle.addEventListener("click", () => toggleExamples());
+// els.random.addEventListener("click", surprise);
+// els.copy.addEventListener("click", copyCard);
 
 document.addEventListener("keydown", (event) => {
   if (event.code === "ArrowRight" || event.code === "Space") {

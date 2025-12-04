@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>cognots — Spanish cognates, decoded</title>
+  <title>cognots</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=General+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -23,8 +23,9 @@
         <div class="slogan">a thousand ways to say something else</div>
       </div>
       <div class="header-actions">
-        <button class="ghost" id="randomBtn" aria-label="Shuffle">Shuffle</button>
-        <button class="ghost" id="copyBtn" aria-label="Copy card">Copy card</button>
+        <button id="prevBtn" class="ghost">Back</button>
+        <button id="nextBtn" class="ghost">Next</button>
+        <button id="surpriseBtn" class="primary">Surprise me</button>
       </div>
     </header>
 
@@ -37,54 +38,53 @@
           </div>
           <div class="word-col">
             <p class="label">looks like</p>
-            <p class="looks-like"><span class="looks-like" id="looksLike">exit</span> (<span class="looks-like-correct" id="looksLikeCorrect">aa</span>)</p>
+            <p class="looks-like"><span class="looks-like" id="looksLike">exit</span> (<span class="looks-like-correct" id="looksLikeCorrect">salida</span>)</p>
           </div>
         </div>
         <div class="meaning">
           <p class="label">actually means</p>
           <p class="meaning-text" id="meaningText">success; a win, not a doorway</p>
         </div>
+        <br>
         <section class="examples" id="examplesSection">
           <div class="examples-header">
             <p class="label">examples</p>
-            <button class="ghost toggle-examples" id="examplesToggle" aria-expanded="false" aria-controls="examplesPanel">Show examples</button>
           </div>
           <div class="examples-panel" id="examplesPanel" hidden>
             <div class="example-row correct">
-              <span class="example-chip">what you meant</span>
+              <span class="example-chip">how to use it</span>
               <div class="example-text">
                 <p class="example-es" id="correctExample">El formulario estaba completamente en blanco.</p>
                 <p class="example-en" id="correctTranslation">The form was completely blank.</p>
               </div>
             </div>
             <div class="example-row incorrect">
-              <span class="example-chip">false friend</span>
+              <span class="example-chip">how not to</span>
               <div class="example-text">
-                <p class="example-es" id="falseFriendExample">El perro blanco corrió por el jardín.</p>
+               <p class="example-es" id="falseFriendExample">El perro blanco corrió por el jardín.</p>
+               
                 <div class="translation-block">
-                  <p class="translation-line wrong"><span class="translation-label">✗ Misread it as:</span> <span id="falseFriendTranslationWrong">The blank dog ran through the garden.</span></p>
-                  <p class="translation-line right"><span class="translation-label">✓ It really means:</span> <span id="falseFriendTranslationRight">The white dog ran through the garden.</span></p>
+                  <p class="translation-line right"><span id="falseFriendTranslationWrong">The white dog ran through the garden.</span></p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <p class="note" id="noteText">Don't tell your boss you want un exit rápido — you're announcing a win, not quitting.</p>
         <div class="meta-row">
           <div class="chips" id="chipRow"></div>
           <div class="progress" id="progress">1 / 1</div>
         </div>
       </section>
 
-      <div class="controls">
+      <!-- <div class="controls">
         <button id="prevBtn" class="ghost">Back</button>
         <button id="nextBtn" class="ghost">Next</button>
         <button id="surpriseBtn" class="primary">Surprise me</button>
-      </div>
+      </div> -->
     </main>
 
     <footer class="footer">
-      <p>Tap space, arrow keys, or the buttons to keep stumbling. Spanish learners avoid awkward false friends.</p>
+      <p>Tap space, arrow keys, or the buttons to see more false cognates.</p>
     </footer>
   </div>
 
