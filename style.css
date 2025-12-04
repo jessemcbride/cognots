@@ -44,8 +44,9 @@ body {
 
 .logo-row {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .logo-mark {
@@ -57,6 +58,12 @@ body {
   color: #fff;
   border-radius: 14px;
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.26);
+}
+
+.slogan {
+  color: var(--muted);
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 .spark {
@@ -107,7 +114,7 @@ body {
 .word-col { display: flex; flex-direction: column; gap: 6px; }
 
 .spanish {
-  font-size: clamp(40px, 6vw, 72px);
+  font-size: clamp(44px, 7vw, 82px);
   margin: 0;
   line-height: 1;
   overflow-wrap: break-word;
@@ -122,6 +129,16 @@ body {
   hyphens: manual;
 }
 
+.looks-like {
+  margin: 0;
+  font-size: 22px;
+  color: var(--muted);
+  overflow-wrap: break-word;
+  hyphens: manual;
+  font-style: italic;
+  text-transform: lowercase;
+}
+
 .meaning {
   display: flex;
   flex-direction: column;
@@ -130,15 +147,108 @@ body {
   border: 1px solid var(--border);
   border-radius: 12px;
   background: #f8fafc;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.06);
 }
 
 .meaning-text {
   margin: 0;
-  font-size: 24px;
+  font-size: clamp(22px, 3vw, 28px);
   font-weight: 600;
   overflow-wrap: break-word;
   hyphens: manual;
 }
+
+.examples {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px 14px;
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+  transition: box-shadow 160ms ease, transform 160ms ease;
+}
+
+.examples.open { box-shadow: 0 14px 32px rgba(15, 23, 42, 0.12); transform: translateY(-1px); }
+
+.examples-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.toggle-examples {
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+.toggle-examples[disabled] { opacity: 0.5; cursor: not-allowed; }
+
+.examples-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.example-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 12px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+}
+
+.example-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 110px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border: 1px solid transparent;
+}
+
+.example-row.incorrect .example-chip {
+  background: rgba(255, 122, 90, 0.14);
+  color: #b23a1c;
+  border-color: rgba(255, 122, 90, 0.5);
+}
+
+.example-row.correct .example-chip {
+  background: rgba(34, 197, 94, 0.16);
+  color: #0f5132;
+  border-color: rgba(34, 197, 94, 0.5);
+}
+
+.example-text { display: flex; flex-direction: column; gap: 4px; }
+.example-es { margin: 0; font-size: 16px; font-weight: 600; color: var(--text); }
+.example-en { margin: 0; font-size: 14px; color: var(--muted-2); }
+
+.translation-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.translation-line {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted-2);
+  line-height: 1.5;
+}
+
+.translation-label { font-weight: 700; letter-spacing: 0.01em; }
+.translation-line.wrong .translation-label { color: #b23a1c; }
+.translation-line.right .translation-label { color: #0f5132; }
 
 .label {
   margin: 0;
@@ -154,6 +264,27 @@ body {
   line-height: 1.55;
   padding-left: 12px;
   border-left: 3px solid var(--accent);
+}
+
+.note-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.note-es {
+  font-style: italic;
+}
+
+.note-en {
+  color: var(--muted-2);
+}
+
+.note em {
+  font-style: italic;
+  color: var(--accent-2);
+  font-weight: 600;
 }
 
 .note em {
@@ -232,6 +363,8 @@ button.primary {
   .header-actions { width: 100%; }
   .header-actions button { flex: 1; }
   .word-row { grid-template-columns: 1fr; }
+  .examples-header { flex-direction: column; align-items: flex-start; }
+  .toggle-examples { width: 100%; }
   .controls { flex-direction: column; align-items: stretch; }
   button { width: 100%; }
 }

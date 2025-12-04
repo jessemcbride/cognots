@@ -20,6 +20,7 @@
           <span class="spark"></span>
           <span class="wordmark">cognots</span>
         </div>
+        <div class="slogan">a thousand ways to say something else</div>
       </div>
       <div class="header-actions">
         <button class="ghost" id="randomBtn" aria-label="Shuffle">Shuffle</button>
@@ -29,7 +30,6 @@
 
     <main class="content">
       <section class="card" id="card">
-        <div class="eyebrow" id="category">false friend</div>
         <div class="word-row">
           <div class="word-col">
             <p class="label">en español</p>
@@ -37,13 +37,38 @@
           </div>
           <div class="word-col">
             <p class="label">looks like</p>
-            <p class="looks-like" id="looksLike">exit</p>
+            <p class="looks-like"><span class="looks-like" id="looksLike">exit</span> (<span class="looks-like-correct" id="looksLikeCorrect">aa</span>)</p>
           </div>
         </div>
         <div class="meaning">
           <p class="label">actually means</p>
           <p class="meaning-text" id="meaningText">success; a win, not a doorway</p>
         </div>
+        <section class="examples" id="examplesSection">
+          <div class="examples-header">
+            <p class="label">examples</p>
+            <button class="ghost toggle-examples" id="examplesToggle" aria-expanded="false" aria-controls="examplesPanel">Show examples</button>
+          </div>
+          <div class="examples-panel" id="examplesPanel" hidden>
+            <div class="example-row correct">
+              <span class="example-chip">what you meant</span>
+              <div class="example-text">
+                <p class="example-es" id="correctExample">El formulario estaba completamente en blanco.</p>
+                <p class="example-en" id="correctTranslation">The form was completely blank.</p>
+              </div>
+            </div>
+            <div class="example-row incorrect">
+              <span class="example-chip">false friend</span>
+              <div class="example-text">
+                <p class="example-es" id="falseFriendExample">El perro blanco corrió por el jardín.</p>
+                <div class="translation-block">
+                  <p class="translation-line wrong"><span class="translation-label">✗ Misread it as:</span> <span id="falseFriendTranslationWrong">The blank dog ran through the garden.</span></p>
+                  <p class="translation-line right"><span class="translation-label">✓ It really means:</span> <span id="falseFriendTranslationRight">The white dog ran through the garden.</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <p class="note" id="noteText">Don't tell your boss you want un exit rápido — you're announcing a win, not quitting.</p>
         <div class="meta-row">
           <div class="chips" id="chipRow"></div>
